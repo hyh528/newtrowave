@@ -1,12 +1,12 @@
-package com.kostars.newtroshop.domain.cart;
+package com.example.demo.dao;
 
-import com.kostars.newtroshop.domain.user.User;
+import com.example.demo.entity.Cart;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import java.util.List;
-import java.util.Optional;
-
-
-public interface ShoppingCartRepository extends JpaRepository<ShoppingCart, Long> {
-    ShoppingCart findByUserId(Long userId);
+/**
+ * CartRepository
+ */
+public interface CartRepository extends JpaRepository<Cart,Integer>{
+  
 }
